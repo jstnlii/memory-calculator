@@ -1,5 +1,5 @@
-#ifndef MULT_H
-#define MULT_H
+#ifndef VID_H
+#define VID_H
 
 int vid(int a, int b);
 
