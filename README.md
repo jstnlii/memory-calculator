@@ -7,12 +7,16 @@ It uses highly complex algorithms such as if statements and return statements to
 ### Docs
 --- SUBJECT TO CHANGE ---
 
-5 files:
-- main.c
-- add.h
-- sub.h
-- mult.h
-- div.h
+files:
+- main
+	- main.c
+- functions
+	- add.h
+	- sub.h
+	- mult.h
+	- div.h
+- file generator
+	- generator.py
 
 each will contain a function that will do its intended duty (it will match the filename)
 

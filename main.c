@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 int main() {
+		
 
-		int answer = 
+		
     printf("Hello, World!\n");
     return 0;
 }
@@ -10,9 +11,3 @@ int main() {
 
 
 
-// imports
-
-// get input
-
-
-// do math
