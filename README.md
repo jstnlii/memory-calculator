@@ -22,3 +22,6 @@ each will contain a function that will do its intended duty (it will match the f
 
 note* div.h was renamed to vid.h because of namespace issues
 
+
+Archive:
+![image](https://github.com/jstnlii/memory-calculator/assets/101868619/11bd3533-692f-4865-a2f0-6a5b23a1b342)
