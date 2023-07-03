@@ -1,11 +1,11 @@
 #ifndef MULT_H
 #define MULT_H
 
-int dive(int a, int b);
+int vid(int a, int b);
 
 #endif
 
-int dive(int a, int b) {
+int vid(int a, int b) {
   if (a == 1  && b == 1 ) return 1
   if (a == 1  && b == 2 ) return 0
   if (a == 1  && b == 3 ) return 0
