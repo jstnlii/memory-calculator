@@ -5,7 +5,7 @@
 #include "mult.h"
 
 int main() {
-	printf("Enter operation, e.g. (1+1):\n");
+	printf("Enter operation, e.g. (1 + 1):\n");
 	
 	char question[100];
 	fgets(question, sizeof(question), stdin);
