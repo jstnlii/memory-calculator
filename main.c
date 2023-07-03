@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "test_add.h"
 
 int main() {
 	printf("Enter operation, e.g. (1+1):\n");
@@ -15,16 +16,16 @@ int main() {
 	int result;
 	switch (*operation) {
 		case '+':
-			result = add(a, b);
+			result = test_add(a, b);
 			break;
 		case '-':
-			result = sub(a, b);
+			//result = sub(a, b);
 			break;
 		case '*':
-			result = mult(a, b);
+			//result = mult(a, b);
 			break;
 		case '/':
-			result = vid(a, b);
+			//result = vid(a, b);
 			break;
 	}
 
