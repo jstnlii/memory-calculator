@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include "test_add.h"
+#include "mult.h"
 
 int main() {
 	printf("Enter operation, e.g. (1+1):\n");
@@ -13,7 +14,7 @@ int main() {
 	char* operation = strtok(NULL, "+-*/");
 	int b = atoi(strtok(NULL, "+-*/"));
 
-	int result;
+	int result = 0;
 	switch (*operation) {
 		case '+':
 			result = test_add(a, b);
