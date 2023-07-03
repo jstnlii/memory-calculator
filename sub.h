@@ -1,5 +1,5 @@
-#ifndef MULT_H
-#define MULT_H
+#ifndef SUB_H
+#define SUB_H
 
 int sub(int a, int b);
 
