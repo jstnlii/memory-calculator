@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main() {
 	printf("Enter operation, e.g. (1+1):\n");
@@ -23,7 +24,7 @@ int main() {
 			result = mult(a, b);
 			break;
 		case '/':
-			result = div(a, b);
+			result = vid(a, b);
 			break;
 	}
 

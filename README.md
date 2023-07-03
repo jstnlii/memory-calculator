@@ -14,10 +14,11 @@ files:
 	- add.h
 	- sub.h
 	- mult.h
-	- div.h
+	- vid.h
 - file generator
 	- generator.py
 
 each will contain a function that will do its intended duty (it will match the filename)
 
+note* div.h was renamed to vid.h because of namespace issues
 
