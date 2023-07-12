@@ -1,48 +1,63 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include "test_add.h"
+#include <iostream>
+#include <string>
+#include "add.h"
+#include "sub.h"
 #include "mult.h"
+#include "vid.h"
 
 int main() {
-	printf("Enter operation, e.g. (1 + 1):\n");
+	int a, b;
+	char operation;
 	
-	char question[] = "2 + 3";
-
-	/*
-	failed attempts to get user input below:
-	scanf("%s", &question);
-	gets(question);
-	fgets(question, sizeof(question), stdin);
-	*/
-	
-	printf("user input success\n");
-	a
-	for (int i = 0; i < 999; i++) {
-		
-	int a = atoi(strtok(question, "+-*/"));
-	char* operation = strtok(NULL, "+-*/");
-	int b = atoi(strtok(NULL, "+-*/"));
-
-	printf("input conversion success\n");
+	std::cout << "Enter operation, e.g. (1 + 1):\n";
+	std::cin >> a >> operation >> b;
 
 	int result = 0;
-	switch (*operation) {
+	switch (operation) {
 		case '+':
-			result = test_add(a, b);
+			result = add(a, b);
 			break;
 		case '-':
-			//result = sub(a, b);
+			result = sub(a, b);
 			break;
 		case '*':
 			result = mult(a, b);
 			break;
 		case '/':
-			//result = vid(a, b);
+			result = vid(a, b);
 			break;
 	}
 
-	printf("Result: %d\n", result);	
+	std::cout << "Result: " << result << "\n";
 	return 0;
 }
 
+/*
+struct factors(string user_input) {
+	std::string user_input;
+
+	std::cout << "Enter operation, e.g. (1 + 1):\n";
+	std::cin >> user_input;
+	
+	long unsigned int i = 0;
+	for (; i < user_input.length(); i++) {
+		if (user_input.at(i) == ' ' || user_input.at(i) == '+' || user_input.at(i) == '-' || user_input.at(i) == '*' || user_input.at(i) == '/') {
+			break;
+		}
+	}
+	std::cout << "value input: " << user_input << "\n";
+	int a = stoi(user_input.substr(0, i));
+	std::cout << "value i: " << i << "\n";
+	std::cout << "value at i: " << user_input.at(1) << "\n";
+	i += user_input.at(i) == ' ' ? 1 : 0;
+	std::cout << "debug\n";
+	char operation = user_input.at(i);
+	std::cout << "debug\n";
+	i += user_input.at(i) == ' ' ? 1 : 0;
+	std::cout << "debug\n";
+	int b = stoi(user_input.substr(i+1, user_input.length() - i - 1));
+
+	return stuff;
+}
+
+*/
