@@ -5,12 +5,19 @@
 #include "mult.h"
 #include "vid.h"
 
+int max = 400;
+
 int main() {
 	int a, b;
 	char operation;
 	
 	std::cout << "Enter operation, e.g. (1 + 1):\n";
 	std::cin >> a >> operation >> b;
+	
+	if (a > max || b > max) {
+		std::cout << "Sorry, input number was greater than " << max << "\n";
+		return 0;
+	}
 
 	int result = 0;
 	switch (operation) {
