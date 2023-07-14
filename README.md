@@ -1,8 +1,19 @@
 # memory-calculator
 
 This is a no-math calculator.
-It uses highly complex algorithms such as if statements and return statements to calculate any mathematical problem in constant time!!!
+It uses highly complex algorithms such as if statements and return statements to calculate any basic mathematical expresion in **constant time**!!!
 
+### How to use
+Linux:  
+1. download the compiled binary
+2. ensure you have given it execute permissions `chmod 766 compiled.out`
+3. run it as you would any executable file
+
+Windows:  
+no fucking clue lmfao
+
+Mac:  
+pre sure u can do the same as linux
 
 ### Docs
 --- SUBJECT TO CHANGE ---
